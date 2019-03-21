@@ -1,4 +1,4 @@
-job('My samplephpwebsite V3') {
+job('My samplephpwebsite') {
     scm {
         git('https://github.com/jleleu42/virtualisation-exam') {  node -> 
             node / gitConfigName('jleleu42')
