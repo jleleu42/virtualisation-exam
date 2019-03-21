@@ -9,6 +9,6 @@ job('My samplephpwebsite') {
         scm('H * * * *')
     }
     steps {
-
+        shell('docker compose up --build')
     }
 }
