@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  web:
+    image: nginx:1.12
+    volumes:      
+      - ./:/var/www/html/
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+    links:
+      - php
+    depends_on:
+      - php
+    ports:
+      - "8080:80"
+
+  php:
+    build:
+      context: ./
+      dockerfile: php_pdo.Dockerfile
+    volumes:
+      - ./:/var/www/html/
