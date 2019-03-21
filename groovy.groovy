@@ -9,6 +9,6 @@ job('My samplephpwebsite') {
         scm('H * * * *')
     }
     steps {
-        shell('php ./tests/units/helloworld.php')
+        shell('[ -f ./tests/units/helloworld.php ] && php ./tests/units/helloworld.php || echo "Not found"')
     }
 }
