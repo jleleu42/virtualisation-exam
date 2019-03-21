@@ -1,0 +1,42 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/My samplephpwebsite
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jleleu42/virtualisation-exam # timeout=10
+Fetching upstream changes from https://github.com/jleleu42/virtualisation-exam
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jleleu42/virtualisation-exam +refs/heads/*:refs/remotes/origin/*
+Seen branch in repository origin/jenkins
+Seen branch in repository origin/v1
+Seen branch in repository origin/v2
+Seen branch in repository origin/v3
+Seen 4 remote branches
+ > git show-ref --tags -d # timeout=10
+Checking out Revision 901d5713e538b9d12ed67ba25c0ce2a255b90b09 (origin/v2)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 901d5713e538b9d12ed67ba25c0ce2a255b90b09
+Commit message: "v2 test ok"
+ > git rev-list --no-walk 348c0e249a5ddb48712781ccdb73ac9ae4dda8e7 # timeout=10
+ > git tag -a -f -m Jenkins Build #6 jenkins-My_samplephpwebsite-6 # timeout=10
+[My samplephpwebsite] $ /bin/sh -xe /tmp/jenkins6607460861182715182.sh
++ php ./tests/units/helloworld.php
+> atoum path: /var/jenkins_home/workspace/My samplephpwebsite/tests/units/helloworld.php
+> atoum version: 3.2.0
+> PHP path: /usr/bin/php7.0
+> PHP version:
+=> PHP 7.0.33-0+deb9u3 (cli) (built: Mar  8 2019 10:01:24) ( NTS )
+=> Copyright (c) 1997-2017 The PHP Group
+=> Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
+=>     with Zend OPcache v7.0.33-0+deb9u3, Copyright (c) 1999-2017, by Zend Technologies
+> samplephpwebsite\tests\units\helloWorld...
+[.___________________________________________________________][0/1]
+[S___________________________________________________________][1/1]
+=> Test duration: 0.00 second.
+=> Memory usage: 0.00 Mb.
+> Total test duration: 0.00 second.
+> Total test memory usage: 0.00 Mb.
+> Running duration: 0.03 second.
+Success (1 test, 1/1 method, 0 void method, 0 skipped method, 2 assertions)!
+Finished: SUCCESS

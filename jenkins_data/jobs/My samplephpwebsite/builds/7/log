@@ -1,0 +1,27 @@
+Started by user [8mha:////4L0lJx29RZe58HXxzS2YcGAGrD3XlqOmnk8MlRQLGAzbAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/My samplephpwebsite
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jleleu42/virtualisation-exam # timeout=10
+Fetching upstream changes from https://github.com/jleleu42/virtualisation-exam
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jleleu42/virtualisation-exam +refs/heads/*:refs/remotes/origin/*
+Seen branch in repository origin/jenkins
+Seen branch in repository origin/v1
+Seen branch in repository origin/v2
+Seen branch in repository origin/v3
+Seen 4 remote branches
+ > git show-ref --tags -d # timeout=10
+Checking out Revision efea6e0fa25e60390666002041a7e59b44759082 (origin/jenkins)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f efea6e0fa25e60390666002041a7e59b44759082
+Commit message: "Update jenkins.Dockerfile"
+ > git rev-list --no-walk 6c3155bd48a4b3197d97b21996d8a7e04f214a6b # timeout=10
+ > git tag -a -f -m Jenkins Build #7 jenkins-My_samplephpwebsite-7 # timeout=10
+[My samplephpwebsite] $ /bin/sh -xe /tmp/jenkins3067564570695646121.sh
++ php ./tests/units/helloworld.php
+Could not open input file: ./tests/units/helloworld.php
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

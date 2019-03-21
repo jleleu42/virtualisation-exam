@@ -1,0 +1,33 @@
+Started by user [8mha:////4L0lJx29RZe58HXxzS2YcGAGrD3XlqOmnk8MlRQLGAzbAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/My samplephpwebsite
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/jleleu42/virtualisation-exam
+ > git init /var/jenkins_home/workspace/My samplephpwebsite # timeout=10
+Fetching upstream changes from https://github.com/jleleu42/virtualisation-exam
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jleleu42/virtualisation-exam +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/jleleu42/virtualisation-exam # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/jleleu42/virtualisation-exam # timeout=10
+Fetching upstream changes from https://github.com/jleleu42/virtualisation-exam
+ > git fetch --tags --progress https://github.com/jleleu42/virtualisation-exam +refs/heads/*:refs/remotes/origin/*
+Seen branch in repository origin/v1
+Seen branch in repository origin/v2
+Seen branch in repository origin/v3
+Seen 3 remote branches
+ > git show-ref --tags -d # timeout=10
+Multiple candidate revisions
+Scheduling another build to catch up with My samplephpwebsite
+Checking out Revision 5d9fa85b8b2a6660436e3df8d8b3072f0463ceeb (origin/v3)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5d9fa85b8b2a6660436e3df8d8b3072f0463ceeb
+Commit message: "groovyfile"
+First time build. Skipping changelog.
+ > git tag -a -f -m Jenkins Build #1 jenkins-My_samplephpwebsite-1 # timeout=10
+[My samplephpwebsite] $ /bin/sh -xe /tmp/jenkins5474444193243667625.sh
++ php ./tests/units/helloworld.php
+Could not open input file: ./tests/units/helloworld.php
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

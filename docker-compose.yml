@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  jenkins-exam2:
+    build:
+      context: ./
+      dockerfile: jenkins.Dockerfile
+    volumes:
+      - ./jenkins_data/:/var/jenkins_home
+    ports:
+      - "8091:8080"

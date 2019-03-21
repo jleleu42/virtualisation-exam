@@ -1,0 +1,25 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Groovy-samplephpwebsite
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jleleu42/virtualisation-exam # timeout=10
+Fetching upstream changes from https://github.com/jleleu42/virtualisation-exam
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jleleu42/virtualisation-exam +refs/heads/*:refs/remotes/origin/*
+Seen branch in repository origin/jenkins
+Seen branch in repository origin/v1
+Seen branch in repository origin/v2
+Seen branch in repository origin/v3
+Seen 4 remote branches
+ > git show-ref --tags -d # timeout=10
+Checking out Revision 094e5180ba0455353810121a05ae1f854a57c09c (origin/v3)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 094e5180ba0455353810121a05ae1f854a57c09c
+Commit message: "v3 test ok"
+ > git rev-list --no-walk e59aafa69ea0527e78f5498188dc263fb38f535c # timeout=10
+Processing DSL script groovy.groovy
+Warning: the script name 'groovy.groovy is identical to a package name; choose a different script name to avoid problems
+ERROR: script not yet approved for use
+Finished: FAILURE
