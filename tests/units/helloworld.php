@@ -8,15 +8,6 @@ require_once 'atoum.phar';
 require_once __DIR__ . '/../../helloworld.php';
 
 
-/*
-class helloWorld
-{
-   public function say()
-   {
-      return 'Hello World !';
-   }
-}*/
-
 class helloWorld extends atoum
 {
 
