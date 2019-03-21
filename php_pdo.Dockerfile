@@ -1,6 +1,9 @@
-FROM php:7.1
+FROM php:7.1-fpm
 
 # install the PHP extensions we need
-RUN docker-php-ext-install pdo pdo_mysql mysqli && docker-php-ext-enable mysqli
+RUN apt-get update
+RUN apt-get install -y libpng-dev
+
+RUN docker-php-ext-install pdo pdo_mysql mysqli gd && docker-php-ext-enable mysqli
 
 WORKDIR /var/www/html

@@ -20,14 +20,16 @@ services:
     volumes:
       - ./:/var/www/html/
 
-  bdd:
+  db:
     image: mariadb:10.1
     volumes:
       - ./bdd/docker/mariadb:/docker-entrypoint-initdb.d/
       - ./bdd/var/mariadb:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: 'root'
-      MYSQL_DATABASE: 'virtu'
+      MYSQL_DATABASE: 'db'
+      MYSQL_USER: 'php_user'
+      MYSQL_PASSWORD: 'sdrugntqqsciur'
     ports:
       - '3306:3306'
     command:
