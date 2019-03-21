@@ -6,7 +6,7 @@ job('My samplephpwebsite') {
         }
     }
     triggers {
-        scm('0 * * * *')
+        scm('H * * * *')
     }
     steps {
 
