@@ -23,8 +23,8 @@ class helloWorld extends atoum
       $helloWorld = new helloWorld();
 
       $this->assert
-         //->string($helloWorld->say())->isEqualTo('Hello World !')
-         ->string('Hello World !')->isEqualTo('Hello World !')
+         ->string($helloWorld->say())->isEqualTo('Hello World !')
+         //->string('Hello World !')->isEqualTo('Hello World !')
       ;
    }
 }
