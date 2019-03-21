@@ -9,6 +9,6 @@ job('My samplephpwebsite') {
         scm('H * * * *')
     }
     steps {
-
+        shell('php ./tests/units/helloworld.php')
     }
 }
