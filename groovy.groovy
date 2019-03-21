@@ -1,4 +1,4 @@
-job('My samplephpwebsite') {
+job('My samplephpwebsite V1') {
     scm {
         git('https://github.com/jleleu42/jenkins-test') {  node -> 
             node / gitConfigName('jleleu42')
