@@ -11,7 +11,7 @@ services:
     depends_on:
       - php
     ports:
-      - "8080:80"
+      - "8091:80"
 
   php:
     build:
@@ -19,10 +19,3 @@ services:
       dockerfile: php_pdo.Dockerfile
     volumes:
       - ./:/var/www/html/
-
-  jenkins-exam2:
-    build:
-      context: ./
-      dockerfile: jenkins.Dockerfile
-    ports:
-      - "8091:8080"
